@@ -1,0 +1,22 @@
+config: 
+  documentclass:
+    name: article
+    options: []
+  precommands:
+    - title: \LaTeX
+
+document:
+  precommands:
+    - maketitle
+  schema:
+    environments: [center, itemize]
+    commands: [item, section]
+    root:
+      - section:
+          params: Section
+          content:
+            - itemize:
+                content:
+                  - item: item
+                  - item: item
+                  - item: item
